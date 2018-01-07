@@ -1,0 +1,2 @@
+# Spartak
+WordPress blog theme
