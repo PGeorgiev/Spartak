@@ -961,3 +961,7 @@ a.col-1.sbtn.s-facebook:hover {
    /*display: flex;*/
    /*justify-content: center;*/
 /*}*/
+
+.entry-footer {
+  padding-bottom: 2px;
+}
