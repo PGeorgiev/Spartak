@@ -1,3 +1,3 @@
 Spartak
 ===
-Simple Blog theme
+Simple Blog theme based on underscores.me
