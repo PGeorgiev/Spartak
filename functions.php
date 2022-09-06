@@ -131,51 +131,11 @@ function spartak_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'spartak_scripts' );
 
-
-/* Social Sharing buttons */
-
 // Function to handle the thumbnail request
 function get_the_post_thumbnail_src($img)
 {
 	return (preg_match('~\bsrc="([^"]++)"~', $img, $matches)) ? $matches[1] : '';
 }
-function pgeorgiev_social_buttons($content) {
-	global $post;
-	if(is_singular() || is_home()){
-
-		// Get current page URL
-		$sb_url = urlencode(get_permalink());
-
-		// Get current page title
-		$sb_title = str_replace( ' ', '%20', get_the_title());
-
-
-
-
-		// Based on popular demand added Pinterest too
-		$pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$sb_url.'&amp;media='.$sb_thumb[0].'&amp;description='.$sb_title;
-		$gplusURL ='https://plus.google.com/share?url='.$sb_title.'';
-
-		// Add sharing button at the end of page/page content
-		$content .= '<div class="social-box"><div class="social-btn">';
-		$content .= '<a class="col-1 sbtn s-twitter" href="'. $twitterURL .'" target="_blank" rel="nofollow"><span>Twitter</span></a>';
-		$content .= '<a class="col-1 sbtn s-facebook" href="'.$facebookURL.'" target="_blank" rel="nofollow"><span>Facebook</span></a>';
-		$content .= '</div></div>';
-
-		return $content;
-	}else{
-		// if not a post/page then don't include sharing button
-		return $content;
-	}
-};
-// Enable the_content if you want to automatically show social buttons below your post.
-
-add_filter( 'the_content', 'pgeorgiev_social_buttons');
-
-// This will create a wordpress shortcode [social].
-// Please it in any widget and social buttons appear their.
-// You will need to enabled shortcode execution in widgets.
-add_shortcode('social','pgeorgiev_social_buttons');
 
 /**
  * Implement the Custom Header feature.
