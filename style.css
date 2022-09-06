@@ -218,7 +218,9 @@ form textarea:focus + .error {
    cursor: pointer;
    border: 0;
    padding: 0.4em;
+   width: 125px;
 }
+
 #submit:hover {
    background: black;
 }
@@ -414,6 +416,10 @@ th {
 .site-description {
    text-align: center;
    font-style: italic;
+}
+
+.site-branding {
+   margin-right: 70px;
 }
 
 .site-title a:hover {
