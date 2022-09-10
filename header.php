@@ -24,8 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'spartak' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -41,6 +40,8 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
+	<header id="masthead" class="site-header">
+
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'spartak' ); ?></button>
