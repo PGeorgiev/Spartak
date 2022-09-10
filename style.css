@@ -330,7 +330,7 @@ th {
 }
 
 .entry-title:hover {
-   opacity: 0.5;
+   opacity: 0.8;
    cursor: pointer;
 }
 
@@ -474,11 +474,6 @@ img {
 .nav-next {
    float: right;
 }
-
-.post-thumbnail:hover {
-  opacity: 0.8;
-}
-
 
 .cat-links {
    color: red;
