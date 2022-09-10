@@ -76,11 +76,13 @@ if ( ! function_exists( 'spartak_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+			'height'               => 100,
+			'width'                => 450,
+			'flex-height'          => true,
+			'flex-width'           => true,
+			'header-text'          => array( 'site-title', 'site-description' ),
+			'unlink-homepage-logo' => true, 
+ 		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'spartak_setup' );
@@ -136,6 +138,15 @@ function get_the_post_thumbnail_src($img)
 {
 	return (preg_match('~\bsrc="([^"]++)"~', $img, $matches)) ? $matches[1] : '';
 }
+
+	/**
+	 * Sample post thumbnail sizes. Change these to fit your theme
+	 *
+	 * @since  DX Gutenberg 1.1.0
+	 */
+	add_image_size( 'featured', 960, 720 ); 	// Featured image
+	add_image_size( 'thumb-l', 640, 480 ); 		// Thumbnail size large
+	add_image_size( 'thumb-m', 255 ); 			// Thumbnail size small
 
 /**
  * Implement the Custom Header feature.
