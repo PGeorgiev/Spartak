@@ -494,3 +494,6 @@ p.site-title {
    font-size: 2.8em;
 }
 
+.updated {
+   display: none;
+}
