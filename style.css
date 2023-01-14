@@ -329,10 +329,10 @@ th {
    border-radius: 8px;
 }
 
-.entry-title:hover {
+/* .entry-title:hover {
    opacity: 0.8;
    cursor: pointer;
-}
+} */
 
 .hentry .entry-meta {
    font-size: 10px;
@@ -395,10 +395,9 @@ th {
 .hentry + .hentry { border-top: solid 1px #CCC; padding-top: 2em; margin-top: 2em; }
 
 .hentry .entry-meta { padding-bottom: 0.5em; font-style: italic; color: #999; }
-/*.hentry .entry-meta { color: #999; }*/
+.hentry .entry-meta { color: #999; }
 .hentry .entry-meta a { color: #666; }
-.hentry .entry-meta:hover { color: #666; }
-.hentry .entry-meta:hover a { color: black; }
+
 
 .site-title,
 .site-branding {
