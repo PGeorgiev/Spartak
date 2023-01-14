@@ -316,13 +316,11 @@ th {
 }
 
 .widget-title {
-   /*border-bottom: 1px solid black;*/
    font-weight: bold;
    text-align: center;
    letter-spacing: 1px;
-   background: #161616;
-   color: #fff;
-   font-size: 14px;
+   color: #161616;
+   font-size: 18px;
    padding: 13px 0;
    position: relative;
    margin-bottom: 20px;
@@ -495,4 +493,15 @@ p.site-title {
 
 .updated {
    display: none;
+}
+
+#categories-2 {
+   /* padding: 20px; */
+   margin-bottom: 20px;
+   border: 1px solid #e1e1e1;
+}
+
+#archives-2 {
+   margin-bottom: 20px;
+   border: 1px solid #e1e1e1;
 }
